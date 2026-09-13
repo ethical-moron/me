@@ -1039,6 +1039,10 @@ header.nav {
   filter: invert(1) brightness(1.15);
 }
 
+:root[data-theme="dark"] .chip[data-tech="rest"]::before {
+  filter: invert(1);
+}
+
 :root[data-theme="dark"] .chip[data-tech="bullmq"]::before {
   filter: invert(1);
 }
@@ -1243,7 +1247,7 @@ footer {
 .cursor-trail {
   position: fixed;
   inset: 0;
-  z-index: 80;
+  z-index: 90;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.35s var(--ease);
@@ -1272,7 +1276,7 @@ footer {
   will-change: transform, opacity;
 }
 
-@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   .cursor-trail {
     display: none;
   }

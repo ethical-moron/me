@@ -132,11 +132,11 @@
 })();
 
 (function () {
-  const fine = window.matchMedia("(pointer: fine)").matches;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!fine || reduce) return;
+  if (reduce) return;
 
   const COUNT = 10;
+  const IDLE_MS = 520;
   const trail = document.createElement("div");
   trail.className = "cursor-trail is-on";
   trail.setAttribute("aria-hidden", "true");
@@ -160,25 +160,44 @@
   let lively = false;
   let idleTimer = 0;
   let raf = 0;
+  let primed = false;
+
+  function setPoint(x, y, snap) {
+    mx = x;
+    my = y;
+    if (snap || !primed) {
+      dots.forEach(function (d) {
+        d.x = x;
+        d.y = y;
+      });
+      primed = true;
+    }
+    wake();
+  }
 
   function wake() {
     lively = true;
     window.clearTimeout(idleTimer);
     idleTimer = window.setTimeout(function () {
       lively = false;
-    }, 180);
+    }, IDLE_MS);
     if (!raf) raf = requestAnimationFrame(tick);
   }
 
-  window.addEventListener(
-    "pointermove",
-    function (e) {
-      mx = e.clientX;
-      my = e.clientY;
-      wake();
-    },
-    { passive: true },
-  );
+  function onPointer(e) {
+    if (typeof e.clientX === "number") setPoint(e.clientX, e.clientY, e.type === "pointerdown");
+  }
+
+  function onTouch(e) {
+    if (!e.touches || !e.touches.length) return;
+    const t = e.touches[0];
+    setPoint(t.clientX, t.clientY, e.type === "touchstart");
+  }
+
+  document.addEventListener("pointerdown", onPointer, { passive: true });
+  document.addEventListener("pointermove", onPointer, { passive: true });
+  document.addEventListener("touchstart", onTouch, { passive: true });
+  document.addEventListener("touchmove", onTouch, { passive: true });
 
   window.addEventListener(
     "scroll",
@@ -190,6 +209,7 @@
       dots.forEach(function (d) {
         d.y -= dy;
       });
+      my -= dy;
       wake();
     },
     { passive: true },
