@@ -1,8 +1,8 @@
 (function () {
   try {
-    var theme = localStorage.getItem("theme") || "dark";
+    var theme = localStorage.getItem("theme") || "light";
     document.documentElement.setAttribute("data-theme", theme);
   } catch (e) {
-    document.documentElement.setAttribute("data-theme", "dark");
+    document.documentElement.setAttribute("data-theme", "light");
   }
 })();

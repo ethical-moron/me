@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -108,13 +108,28 @@
         <div class="hero-scrim"></div>
         <div class="wrap">
           <div class="hero-inner">
-            <h1>Building backend systems that hold under load.</h1>
+            <h1>
+              Building
+              <span class="type-rotate" aria-hidden="true"
+                ><span class="type-text" data-type="hero"></span
+                ><span class="type-caret"></span
+              ></span>
+              <span class="visually-hidden"
+                >backend systems that hold under load</span
+              >
+            </h1>
             <p class="hero-lede">
-              Senior Software Engineer.
-              <span class="exp-years">8</span> years across distributed
-              backends, platform migrations, and production infrastructure —
-              including LLM agents. Healthcare, telecom, rail, climate so far.
-              The domain changes. The job does not.
+              <span class="exp-years">8</span> years building and evolving
+              distributed backend systems, modernizing production platforms, and
+              migrating live systems while keeping customer-facing applications
+              available. Most of the work lives where architecture meets
+              production — where systems must scale, stay reliable, and cost
+              less to run — with the accountability that comes when production
+              is the judge.
+              <span class="hero-closer"
+                >Domains <em>change</em>. Roles <em>evolve</em>. The job
+                <em>does not</em>.</span
+              >
             </p>
             <div class="ctas">
               <a class="btn btn-primary" href="#work">
@@ -154,7 +169,9 @@
           </div>
           <div class="impact-item">
             <div class="num">K8s</div>
-            <div class="lbl">serverless estate moved to Kubernetes</div>
+            <div class="lbl">
+              legacy serverless stack retired, moved to Kubernetes
+            </div>
           </div>
           <div class="impact-item">
             <div class="num">WillisAI</div>
@@ -165,7 +182,7 @@
 
       <section class="section work" id="work">
         <div class="wrap">
-          <h2 data-reveal>What is shipped and what I'm building now.</h2>
+          <h2 data-reveal>What is shipped and what I'm building now</h2>
           <div class="work-grid">
             <article class="case case-k8s">
               <img
@@ -307,16 +324,16 @@
 
       <section class="section experience" id="experience">
         <div class="wrap">
-          <h2 data-reveal>
-            <span class="exp-years">8</span> years across climate, healthcare,
-            telecom, and rail.
-          </h2>
+          <h2 data-reveal>Where I've been so far</h2>
           <div class="experience-list">
             <article class="job">
               <div class="job-year">2024 - now</div>
               <div>
                 <h3>Senior Software Engineer</h3>
-                <div class="job-org">Carrier Corporation</div>
+                <div class="job-org">
+                  Carrier Corporation
+                  <span class="job-loc">Hyderabad</span>
+                </div>
                 <p>
                   Backend for web and mobile climate products used across
                   buildings. Owned the Kubernetes cutover, geofencing, the
@@ -328,8 +345,11 @@
             <article class="job">
               <div class="job-year">2022 - 2024</div>
               <div>
-                <h3>Backend Developer</h3>
-                <div class="job-org">Cognizant</div>
+                <h3>Associate - Projects</h3>
+                <div class="job-org">
+                  Cognizant
+                  <span class="job-loc">Hyderabad</span>
+                </div>
                 <p>
                   Pharmacy platforms for CarelonRx and CVS Health. Built and
                   refactored APIs, wired AWS event pipelines, and spent a lot of
@@ -341,7 +361,10 @@
               <div class="job-year">2018 - 2022</div>
               <div>
                 <h3>Systems Engineer</h3>
-                <div class="job-org">Tata Consultancy Services</div>
+                <div class="job-org">
+                  Tata Consultancy Services
+                  <span class="job-loc">Hyderabad</span>
+                </div>
                 <p>
                   Four years across telecom and rail for Nokia and Aurizon. Led
                   backend work on document systems, product hierarchy, train
@@ -354,48 +377,74 @@
         </div>
       </section>
 
+      <section class="section education" id="education">
+        <div class="wrap">
+          <h2 data-reveal>Where the foundation was built</h2>
+          <div class="experience-list">
+            <article class="job">
+              <div class="job-year">2014 - 2018</div>
+              <div>
+                <h3>B.Tech · CSE</h3>
+                <div class="job-org">
+                  Jalpaiguri Government Engineering College (Autonomous)
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section stack" id="stack">
         <div class="wrap">
-          <h2 data-reveal>How a request actually gets through.</h2>
+          <h2 data-reveal>
+            The stack
+            <span class="type-rotate" aria-hidden="true"
+              ><span class="type-text" data-type="stack"></span
+              ><span class="type-caret"></span
+            ></span>
+            <span class="visually-hidden"
+              >behind the builds and the breakages</span
+            >
+          </h2>
           <div class="pipeline">
             <div class="pipe-stage">
               <div class="stage-lbl">Client</div>
               <div class="chips">
-                <span class="chip">React</span>
+                <span class="chip" data-tech="react">React</span>
               </div>
             </div>
             <div class="pipe-stage">
               <div class="stage-lbl">API layer</div>
               <div class="chips">
-                <span class="chip">NestJS</span>
-                <span class="chip">Express</span>
-                <span class="chip">GraphQL</span>
-                <span class="chip">gRPC</span>
-                <span class="chip">REST</span>
+                <span class="chip" data-tech="nestjs">NestJS</span>
+                <span class="chip" data-tech="express">Express</span>
+                <span class="chip" data-tech="graphql">GraphQL</span>
+                <span class="chip" data-tech="grpc">gRPC</span>
+                <span class="chip" data-tech="rest">REST</span>
               </div>
             </div>
             <div class="pipe-stage">
               <div class="stage-lbl">Data</div>
               <div class="chips">
-                <span class="chip">MongoDB</span>
-                <span class="chip">DynamoDB</span>
-                <span class="chip">TimescaleDB</span>
-                <span class="chip">Snowflake</span>
+                <span class="chip" data-tech="mongodb">MongoDB</span>
+                <span class="chip" data-tech="dynamodb">DynamoDB</span>
+                <span class="chip" data-tech="timescaledb">TimescaleDB</span>
+                <span class="chip" data-tech="snowflake">Snowflake</span>
               </div>
             </div>
             <div class="pipe-stage">
               <div class="stage-lbl">Infra</div>
               <div class="chips">
-                <span class="chip">AWS</span>
-                <span class="chip">Docker</span>
-                <span class="chip">Kubernetes</span>
+                <span class="chip" data-tech="aws">AWS</span>
+                <span class="chip" data-tech="docker">Docker</span>
+                <span class="chip" data-tech="kubernetes">Kubernetes</span>
               </div>
             </div>
             <div class="pipe-stage">
               <div class="stage-lbl">AI layer</div>
               <div class="chips">
-                <span class="chip">Bedrock</span>
-                <span class="chip">Phoenix</span>
+                <span class="chip" data-tech="bedrock">Bedrock</span>
+                <span class="chip" data-tech="phoenix">Phoenix</span>
               </div>
             </div>
           </div>
@@ -420,20 +469,29 @@
     </main>
 
     <section class="section contact" id="contact">
-      <div class="wrap">
-        <h2>Get in touch</h2>
-        <p class="contact-copy">
-          If you need someone who has already shipped this kind of system, write
-          to me.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:NoorSalim.G@outlook.com">NoorSalim.G@outlook.com</a>
-          <a
-            href="https://www.linkedin.com/in/noorsalim/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >linkedin.com/in/noorsalim</a
-          >
+      <div class="contact-panel">
+        <img
+          class="contact-media"
+          src="assets/contact-workspace.png"
+          alt=""
+          loading="lazy"
+        />
+        <div class="contact-scrim" aria-hidden="true"></div>
+        <div class="wrap contact-body">
+          <h2>Get in touch</h2>
+          <p class="contact-copy">
+            If you need someone who has already shipped this kind of system,
+            write to me.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:NoorSalim.G@outlook.com">NoorSalim.G@outlook.com</a>
+            <a
+              href="https://www.linkedin.com/in/noorsalim/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >linkedin.com/in/noorsalim</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -441,7 +499,6 @@
     <footer>
       <div class="wrap footer-row">
         <span>Noor Salim Gazi, Hyderabad</span>
-        <span>B.Tech CSE, Jalpaiguri Govt. Engineering College</span>
       </div>
     </footer>
 
