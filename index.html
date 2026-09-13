@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Salim - Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Senior Software Engineer. Backend systems, platform migrations, and production infrastructure. Node.js, NestJS, AWS, Kubernetes."
+    />
+    <meta property="og:title" content="Noor Salim - Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="Building backend systems that hold under load. Distributed backends, platform migrations, and production infrastructure."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-climate.png" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111214'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Satoshi,Segoe UI,sans-serif' font-size='11' font-weight='700' fill='%23c4844a'%3ENSG%3C/text%3E%3C/svg%3E"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/hero-climate.png"
+      fetchpriority="high"
+    />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.1.1/400.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.1.1/500.min.css"
+    />
+    <script src="js/theme-boot.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#work">Skip to work</a>
+    <div id="top-sentinel"></div>
+
+    <header class="nav">
+      <div class="nav-pill">
+        <a class="brand" href="#top">Noor Salim</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#stack">Stack</a>
+          <a href="#contact">Get in touch</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch color theme"
+          >
+            <svg class="icon-sun" viewBox="0 0 256 256" aria-hidden="true">
+              <path
+                d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM40,120H16a8,8,0,0,0,0,16H40a8,8,0,0,0,0-16Zm88,88v24a8,8,0,0,0,16,0V208a8,8,0,0,0-16,0Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+              />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 256 256" aria-hidden="true">
+              <path
+                d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.7-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,62.77,65.1a89,89,0,0,1,31.4-26A104.1,104.1,0,0,0,192,152a103.31,103.31,0,0,0,23.91-2.77A88.18,88.18,0,0,1,188.9,190.34Z"
+              />
+            </svg>
+          </button>
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="overlay"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="overlay" id="overlay">
+      <nav class="menu-panel" aria-label="Mobile">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Get in touch</a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="hero" id="top">
+        <img
+          class="hero-media"
+          src="assets/hero-climate.png"
+          alt=""
+          fetchpriority="high"
+        />
+        <div class="hero-scrim"></div>
+        <div class="wrap">
+          <div class="hero-inner">
+            <h1>Building backend systems that hold under load.</h1>
+            <p class="hero-lede">
+              Senior Software Engineer.
+              <span class="exp-years">8</span> years across distributed
+              backends, platform migrations, and production infrastructure —
+              including LLM agents. Healthcare, telecom, rail, climate so far.
+              The domain changes. The job does not.
+            </p>
+            <div class="ctas">
+              <a class="btn btn-primary" href="#work">
+                See the work
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 256 256">
+                    <path
+                      d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a class="btn btn-ghost" href="#contact">
+                Get in touch
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 256 256">
+                    <path
+                      d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact" aria-label="Selected outcomes">
+        <div class="wrap impact-grid">
+          <div class="impact-item">
+            <div class="num">70%</div>
+            <div class="lbl">cost cut from one legacy bug</div>
+          </div>
+          <div class="impact-item">
+            <div class="num">Millions</div>
+            <div class="lbl">users on a weekly push pipeline</div>
+          </div>
+          <div class="impact-item">
+            <div class="num">K8s</div>
+            <div class="lbl">serverless estate moved to Kubernetes</div>
+          </div>
+          <div class="impact-item">
+            <div class="num">WillisAI</div>
+            <div class="lbl">agent rolling into production apps</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="wrap">
+          <h2 data-reveal>Shipped work. What's in flight.</h2>
+          <div class="work-grid">
+            <article class="case case-k8s">
+              <img
+                class="case-media"
+                src="assets/work-platform.png"
+                alt="Rows of server racks in a dim data center aisle"
+              />
+              <div class="case-scrim"></div>
+              <div class="case-body">
+                <div class="case-status">Shipped · Carrier</div>
+                <h3>Serverless off. Kubernetes on.</h3>
+                <p>
+                  A legacy serverless estate had hit its ceiling. Moved the full
+                  stack onto Kubernetes, containerized the services, and cut
+                  over live traffic without taking products down.
+                </p>
+                <div class="tags">
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">AWS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="case case-geo">
+              <img
+                class="case-media"
+                src="assets/work-city.png"
+                alt="Dusk aerial view of a dense city of residential and office buildings"
+              />
+              <div class="case-scrim"></div>
+              <div class="case-body">
+                <div class="case-status">Shipped · Carrier</div>
+                <h3>A geofence that holds up on a real phone</h3>
+                <p>
+                  Location triggers fail in the messy world: weak GPS,
+                  backgrounded apps, dying batteries. Built the geofencing layer
+                  the mobile app uses for location-aware features.
+                </p>
+                <div class="tags">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Microservices</span>
+                  <span class="tag">Mobile</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="case case-push">
+              <div class="case-body">
+                <div class="case-status">Shipped · Carrier</div>
+                <h3>Weekly push to millions, during a live app swap</h3>
+                <p>
+                  Moving people from the old mobile app to the new one meant
+                  reaching them without flooding inboxes or going silent. Built
+                  the weekly notification pipeline that carried millions of
+                  users through that cutover.
+                </p>
+                <div class="tags">
+                  <span class="tag">NestJS</span>
+                  <span class="tag">AWS</span>
+                  <span class="tag">Postgres</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="case case-cost">
+              <div class="case-body">
+                <div class="case-status">Shipped · Carrier</div>
+                <p class="big">70%</p>
+                <h3>One legacy bug. Most of the bill, gone.</h3>
+                <p>
+                  A defect in old code was quietly burning infrastructure
+                  budget. Found it, fixed it — cost on that system dropped by
+                  70%.
+                </p>
+              </div>
+            </article>
+
+            <article class="case case-ai">
+              <img
+                class="case-media"
+                src="assets/work-willis.png"
+                alt="Macro photograph of copper filaments on a dark graphite field"
+              />
+              <div class="case-scrim"></div>
+              <div class="case-body">
+                <div class="case-status">Building · Carrier</div>
+                <h3>WillisAI</h3>
+                <p>
+                  An AI agent integrating into Carrier apps product by product.
+                  Named for Willis Haviland Carrier. Bedrock, Phoenix, gRPC.
+                  Still rolling out.
+                </p>
+                <div class="tags">
+                  <span class="tag">Bedrock</span>
+                  <span class="tag">Phoenix</span>
+                  <span class="tag">gRPC</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="case case-prior case-health">
+              <div class="case-body">
+                <div class="case-status">Shipped · Cognizant</div>
+                <h3>Pharmacy backends at CarelonRx and CVS</h3>
+                <p>
+                  Services for CarelonRx at Elevance Health and CVS Health's
+                  Manage Your Prescriptions. Regulated systems where a bug is
+                  never just a bug: APIs, AWS event pipelines, and hardening old
+                  code until it was fast and stable.
+                </p>
+                <div class="tags">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">NestJS</span>
+                  <span class="tag">AWS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="case case-prior case-rail">
+              <div class="case-body">
+                <div class="case-status">Shipped · TCS</div>
+                <h3>Telecom docs and rail day-of-operations</h3>
+                <p>
+                  Document and product-hierarchy systems for Nokia. Train
+                  load-unload and crew pre-start systems for Aurizon in
+                  Australia. Different domains. Same backend fundamentals.
+                </p>
+                <div class="tags">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Express</span>
+                  <span class="tag">SQL Server</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="wrap">
+          <h2 data-reveal>
+            <span class="exp-years">8</span> years across climate, healthcare,
+            telecom, and rail.
+          </h2>
+          <div class="experience-list">
+            <article class="job">
+              <div class="job-year">2024 - now</div>
+              <div>
+                <h3>Senior Software Engineer</h3>
+                <div class="job-org">Carrier Corporation</div>
+                <p>
+                  Backend for web and mobile climate products used across
+                  buildings. Owned the Kubernetes cutover, geofencing, the
+                  weekly push pipeline, a 70% cost fix, and WillisAI as it lands
+                  in production.
+                </p>
+              </div>
+            </article>
+            <article class="job">
+              <div class="job-year">2022 - 2024</div>
+              <div>
+                <h3>Backend Developer</h3>
+                <div class="job-org">Cognizant</div>
+                <p>
+                  Pharmacy platforms for CarelonRx and CVS Health. Built and
+                  refactored APIs, wired AWS event pipelines, and spent a lot of
+                  time making legacy services trustworthy again.
+                </p>
+              </div>
+            </article>
+            <article class="job">
+              <div class="job-year">2018 - 2022</div>
+              <div>
+                <h3>Systems Engineer</h3>
+                <div class="job-org">Tata Consultancy Services</div>
+                <p>
+                  Four years across telecom and rail for Nokia and Aurizon. Led
+                  backend work on document systems, product hierarchy, train
+                  operations, and crew pre-start from Node.js services and the
+                  databases clients already trusted.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stack" id="stack">
+        <div class="wrap">
+          <h2 data-reveal>How a request actually gets through.</h2>
+          <div class="pipeline">
+            <div class="pipe-stage">
+              <div class="stage-lbl">Client</div>
+              <div class="chips">
+                <span class="chip">React</span>
+              </div>
+            </div>
+            <div class="pipe-stage">
+              <div class="stage-lbl">API layer</div>
+              <div class="chips">
+                <span class="chip">NestJS</span>
+                <span class="chip">Express</span>
+                <span class="chip">GraphQL</span>
+                <span class="chip">gRPC</span>
+                <span class="chip">REST</span>
+              </div>
+            </div>
+            <div class="pipe-stage">
+              <div class="stage-lbl">Data</div>
+              <div class="chips">
+                <span class="chip">MongoDB</span>
+                <span class="chip">DynamoDB</span>
+                <span class="chip">TimescaleDB</span>
+                <span class="chip">Snowflake</span>
+              </div>
+            </div>
+            <div class="pipe-stage">
+              <div class="stage-lbl">Infra</div>
+              <div class="chips">
+                <span class="chip">AWS</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Kubernetes</span>
+              </div>
+            </div>
+            <div class="pipe-stage">
+              <div class="stage-lbl">AI layer</div>
+              <div class="chips">
+                <span class="chip">Bedrock</span>
+                <span class="chip">Phoenix</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stack-marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Node.js</span><span>TypeScript</span><span>NestJS</span
+            ><span>Express</span><span>GraphQL</span><span>gRPC</span
+            ><span>REST</span><span>MongoDB</span><span>TimescaleDB</span
+            ><span>DynamoDB</span><span>Snowflake</span><span>AWS</span
+            ><span>Kubernetes</span><span>Docker</span><span>Bedrock</span
+            ><span>Phoenix</span><span>React</span> <span>Node.js</span
+            ><span>TypeScript</span><span>NestJS</span><span>Express</span
+            ><span>GraphQL</span><span>gRPC</span><span>REST</span
+            ><span>MongoDB</span><span>TimescaleDB</span><span>DynamoDB</span
+            ><span>Snowflake</span><span>AWS</span><span>Kubernetes</span
+            ><span>Docker</span><span>Bedrock</span><span>Phoenix</span
+            ><span>React</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <h2>Get in touch</h2>
+        <p class="contact-copy">
+          If you need someone who has already shipped this kind of system, write
+          to me.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:NoorSalim.G@outlook.com">NoorSalim.G@outlook.com</a>
+          <a
+            href="https://www.linkedin.com/in/noorsalim/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin.com/in/noorsalim</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap footer-row">
+        <span>Noor Salim Gazi, Hyderabad</span>
+        <span>B.Tech CSE, Jalpaiguri Govt. Engineering College</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
