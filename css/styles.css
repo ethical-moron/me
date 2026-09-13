@@ -926,7 +926,7 @@ header.nav {
 
 .pipeline {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1.75rem 1.25rem;
   margin-top: 0.4rem;
 }
@@ -953,7 +953,7 @@ header.nav {
 .chip {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.55rem;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.82rem;
   padding: 0.55rem 0.75rem;
@@ -963,31 +963,93 @@ header.nav {
   color: var(--text);
 }
 
-.tico {
-  width: 0.95rem;
-  height: 0.95rem;
+.chip[data-tech]::before {
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
   flex: none;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  color: var(--muted);
+  background: center / contain no-repeat;
 }
 
-.tico-fill {
-  fill: currentColor;
-  stroke: none;
+.chip[data-tech="react"]::before {
+  background-image: url("../assets/tech/react.svg");
+}
+.chip[data-tech="nestjs"]::before {
+  background-image: url("../assets/tech/nestjs.svg");
+}
+.chip[data-tech="express"]::before {
+  background-image: url("../assets/tech/express.svg");
+}
+.chip[data-tech="graphql"]::before {
+  background-image: url("../assets/tech/graphql.svg");
+}
+.chip[data-tech="grpc"]::before {
+  background-image: url("../assets/tech/grpc.svg");
+}
+.chip[data-tech="rest"]::before {
+  background-image: url("../assets/tech/rest.svg");
+}
+.chip[data-tech="mongodb"]::before {
+  background-image: url("../assets/tech/mongodb.svg");
+}
+.chip[data-tech="dynamodb"]::before {
+  background-image: url("../assets/tech/dynamodb.svg");
+}
+.chip[data-tech="timescaledb"]::before {
+  background-image: url("../assets/tech/timescaledb.svg");
+}
+.chip[data-tech="snowflake"]::before {
+  background-image: url("../assets/tech/snowflake.svg");
+}
+.chip[data-tech="aws"]::before {
+  background-image: url("../assets/tech/aws.svg");
+}
+.chip[data-tech="docker"]::before {
+  background-image: url("../assets/tech/docker.svg");
+}
+.chip[data-tech="kubernetes"]::before {
+  background-image: url("../assets/tech/kubernetes.svg");
+}
+.chip[data-tech="helm"]::before {
+  background-image: url("../assets/tech/helm.svg");
+}
+.chip[data-tech="argocd"]::before {
+  background-image: url("../assets/tech/argocd.svg");
+}
+.chip[data-tech="grafana"]::before {
+  background-image: url("../assets/tech/grafana.svg");
+}
+.chip[data-tech="kafka"]::before {
+  background-image: url("../assets/tech/kafka.svg");
+}
+.chip[data-tech="bullmq"]::before {
+  background-image: url("../assets/tech/bullmq.svg");
+}
+.chip[data-tech="redis"]::before {
+  background-image: url("../assets/tech/redis.svg");
+}
+.chip[data-tech="bedrock"]::before {
+  background-image: url("../assets/tech/bedrock.svg");
+}
+.chip[data-tech="phoenix"]::before {
+  background-image: url("../assets/tech/phoenix.svg");
 }
 
-.tech-sprite {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
+:root[data-theme="dark"] .chip[data-tech="express"]::before {
+  filter: invert(1) brightness(1.15);
 }
 
-@media (max-width: 900px) {
+:root[data-theme="dark"] .chip[data-tech="bullmq"]::before {
+  filter: invert(1);
+}
+
+@media (max-width: 1100px) {
+  .pipeline {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
   .pipeline {
     grid-template-columns: 1fr 1fr;
   }
