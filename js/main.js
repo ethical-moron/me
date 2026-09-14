@@ -185,7 +185,8 @@
   }
 
   function onPointer(e) {
-    if (typeof e.clientX === "number") setPoint(e.clientX, e.clientY, e.type === "pointerdown");
+    if (typeof e.clientX === "number")
+      setPoint(e.clientX, e.clientY, e.type === "pointerdown");
   }
 
   function onTouch(e) {
@@ -233,4 +234,53 @@
 
     if (lively) raf = requestAnimationFrame(tick);
   }
+})();
+
+(function () {
+  const track = document.querySelector("[data-marquee]");
+  if (!track) return;
+
+  const items = [
+    "Node.js",
+    "TypeScript",
+    "JavaScript",
+    "NestJS",
+    "Express",
+    "GraphQL",
+    "gRPC",
+    "REST API",
+    "MongoDB",
+    "TimescaleDB",
+    "DynamoDB",
+    "Snowflake",
+    "Redis",
+    "Kafka",
+    "BullMQ",
+    "AWS",
+    "Kubernetes",
+    "Docker",
+    "Helm",
+    "Argo CD",
+    "Grafana",
+    "Bedrock",
+    "Arize Phoenix",
+    "React",
+  ];
+
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const tmp = items[i];
+    items[i] = items[j];
+    items[j] = tmp;
+  }
+
+  const frag = document.createDocumentFragment();
+  for (let pass = 0; pass < 2; pass++) {
+    items.forEach(function (label) {
+      const span = document.createElement("span");
+      span.textContent = label;
+      frag.appendChild(span);
+    });
+  }
+  track.appendChild(frag);
 })();
